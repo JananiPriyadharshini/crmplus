@@ -11,9 +11,83 @@
     <h5>This is for testing purpose!!</h5>
    <script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "ebf470d347288ffa4e12bc56e0c122fac1d44286fb7854d84f37ff64fff7c91f", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
    <script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "ebf470d347288ffa4e12bc56e0c122fac1d44286fb7854d84f37ff64fff7c91f", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
-    
-    <!--ZC Popup Code Starts-->
-<script type="text/javascript" id="ZC_Forms_Popup" src="https://campaigns.zoho.com/js/optin.min.js" ></script> <script type="text/javascript">window.onload=function(){loadZCPopup('3zbbd1a62f80cd850220e424b54f623b87f6f4397c69e6f663cc61bad987ec629c','ZCFORMVIEW','3z5ee98aec8bb34aa556ec334555c71347')}</script>
-<!--ZC Popup Code Ends-->
+  <!--Zoho Campaigns Web-Optin Form Starts Here-->
+
+<div id="customForm">
+	<div name="SIGNUP_BODY" changeitem="BG_IMAGE">
+		<div changeitem="ELEGANTFORM_IMAGE">
+			<img src="https://campaign-image.com/zohocampaigns/1301d85c_signup_form_58.png">
+		</div>
+		<link rel="stylesheet">
+		<div>
+			<div style="position:relative;">
+				<div id="Zc_SignupSuccess" style="display:none;position:absolute;margin-left:4%;width:90%;background-color: white; padding: 3px; border: 3px solid rgb(194, 225, 154);  margin-top: 10px;margin-bottom:10px;word-break:break-all ">
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<tbody>
+							<tr>
+								<td width="10%">
+									<img class="successicon" src="https://wiwo-zcglf.maillist-manage.com/images/challangeiconenable.jpg" align="absmiddle">
+								</td>
+								<td>
+									<span id="signupSuccessMsg" style="color: rgb(73, 140, 132); font-family: sans-serif; font-size: 14px;word-break:break-word">&nbsp;&nbsp;Thank you for Signing Up</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<form method="POST" id="zcampaignOptinForm" action="https://wiwo-zcglf.maillist-manage.com/weboptin.zc" target="_zcSignup" onsubmit="zcScptlessSubmit(this)">
+				<div id="errorMsgDiv">Please correct the marked field(s) below.</div>
+				<div>Food Kitchen</div>
+				<div>Welcomes you to</div>
+				<div name="FORM_LINE" changeitem="FORM_LINE"></div>
+				<div>PROPERTY</div>
+				<div>FEST</div>
+				<div name="FORM_LINE_1" changeitem="FORM_LINE_1"></div>
+				<div>
+					<input type="text" placeholder="User Name" changeitem="SIGNUP_FORM_FIELD" name="FIRSTNAME" id="FIRSTNAME">
+				</div>
+				<div>
+					<input placeholder="Email Address" changeitem="SIGNUP_FORM_FIELD" name="CONTACT_EMAIL" id="EMBED_FORM_EMAIL_LABEL" type="text">
+				</div>
+				<div>
+					<input type="submit" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" value="Sign Up">
+				</div>
+				<input type="hidden" id="fieldBorder" value="">
+				<input type="hidden" id="submitType" name="submitType" value="optinCustomView">
+				<input type="hidden" id="emailReportId" name="emailReportId" value="">
+				<input type="hidden" id="formType" name="formType" value="QuickForm">
+				<input type="hidden" name="zx" id="cmpZuid" value="13003f9ad">
+				<input type="hidden" name="zcvers" value="3.0">
+				<input type="hidden" name="oldListIds" id="allCheckedListIds" value="">
+				<input type="hidden" id="mode" name="mode" value="OptinCreateView">
+				<input type="hidden" id="zcld" name="zcld" value="1efbf5138cc1da5d">
+				<input type="hidden" id="zctd" name="zctd" value="">
+				<input type="hidden" id="document_domain" value="">
+				<input type="hidden" id="zc_Url" value="wiwo-zcglf.maillist-manage.com">
+				<input type="hidden" id="new_optin_response_in" value="0">
+				<input type="hidden" id="duplicate_optin_response_in" value="0">
+				<input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW">
+				<input type="hidden" id="zc_formIx" name="zc_formIx" value="3zbbd1a62f80cd850220e424b54f623b87e52dc7cbeafbfe62c8a9bd0680e4cd7a">
+				<input type="hidden" id="viewFrom" value="URL_ACTION">
+				<input type="hidden" id="scriptless" name="scriptless" value="yes">
+				<input type="hidden" id="zc_spmSubmit" name="zc_spmSubmit" value="ZCSPMSUBMIT">
+			</form>
+		</div>
+	</div>
+</div>
+<div id="zcOptinOverLay" oncontextmenu="return false" style="display:none;text-align: center; background-color: rgb(0, 0, 0); opacity: 0.5; z-index: 100; position: fixed; width: 100%; top: 0px; left: 0px; height: 988px;"></div>
+<div id="zcOptinSuccessPopup" style="display:none;z-index: 9999;width: 800px; height: 40%;top: 84px;position: fixed; left: 26%;background-color: #FFFFFF;border-color: #E6E6E6; border-style: solid; border-width: 1px;  box-shadow: 0 1px 10px #424242;padding: 35px;">
+	<span style="position: absolute;top: -16px;right:-14px;z-index:99999;cursor: pointer;" id="closeSuccess">
+		<img src="https://wiwo-zcglf.maillist-manage.com/images/videoclose.png">
+	</span>
+	<div id="zcOptinSuccessPanel"></div>
+</div>
+<script>
+	function zcScptlessSubmit(parentNode){
+		parentNode.removeChild(document.querySelector("#zc_spmSubmit"));parentNode.submit();
+	}
+</script>
+<!--Zoho Campaigns Web-Optin Form Ends Here-->
     </body>
 </html>
